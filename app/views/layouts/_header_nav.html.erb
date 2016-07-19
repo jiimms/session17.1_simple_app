@@ -1,0 +1,24 @@
+<header><!-- header -->
+		<h1>Speeding Through Life</h1>
+		<h2>Where do you think you are going?</h2>
+		<%=image_tag "headerimg.jpg", size: "940x200"%>
+ 	</header><!-- end of header -->
+	
+	<nav><!-- top nav -->
+		<div class="menu">
+			<ul>
+				<li><%= nav_link_to "Home", "home", root_path, "current_page"%></li>
+				<li><%= nav_link_to "About_us","about_us", about_us_path, "current_page" %></li>
+				<li><%= nav_link_to "Products","products", products_path, "current_page" %>
+					<ul class = "dropdown">
+						<li><%= nav_link_to "Product 1", "home", root_path, "current_page"%></li><br>
+						<li><%= nav_link_to "Product 2", "home", root_path, "current_page"%></li><br>
+						<li><%= nav_link_to "Product 3", "home", root_path, "current_page"%></li>
+					</ul>
+				</li>
+				<li><%= nav_link_to "Services", "services",services_path, "current_page" %></li>
+				<li><%= nav_link_to "FAQ","faq", faq_path, "current_page" %></li>
+				<li><%= nav_link_to "Contact","contact", contact_path, "current_page" %></li>
+			</ul>
+		</div>
+	</nav><!-- end of top nav -->
